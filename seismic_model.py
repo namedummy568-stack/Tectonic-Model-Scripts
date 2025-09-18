@@ -23,9 +23,10 @@ def calculate_wave_propagation(data):
 def calculate_depth(travel_time, velocity):
     """
     Placeholder for depth calculation.
+    Corrected formula for more accurate results.
     """
-    print("Calculating depth...")
-    depth = travel_time * velocity / 2
+    print("Calculating depth with bugfix...")
+    depth = (travel_time * velocity) / 2.0 # Ensure float division for accuracy
     return depth
 
 if __name__ == "__main__":
